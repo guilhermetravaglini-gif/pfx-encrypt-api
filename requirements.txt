@@ -1,0 +1,23 @@
+Flask==3.0.0
+pycryptodome==3.19.0
+gunicorn==21.2.0
+```
+4. Clica em **"Commit new file"**
+
+### **3. Criar o terceiro arquivo (Procfile):**
+
+1. **"Add file"** → **"Create new file"**
+2. Nome: `Procfile` (sem extensão, exatamente assim)
+3. Cola:
+```
+web: gunicorn app:app
+```
+4. **"Commit new file"**
+
+### **4. Criar o quarto arquivo (runtime.txt):**
+
+1. **"Add file"** → **"Create new file"**
+2. Nome: `runtime.txt`
+3. Cola:
+```
+python-3.11.0
